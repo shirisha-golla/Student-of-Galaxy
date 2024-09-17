@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Satellites</title>
+    <script src="../js/satellite.js" defer></script>
+    <link rel="stylesheet" href="../css/satellite.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Satellites</h1>
+            <input class="b" id="left" type="button" value="<" onclick="dec()">
+            <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./Homepage.html"><li class="mli">home</li></a>
+            <a href="./info.html" target="_blank"><li class="mli">about</li></a>
+            <li class="mli" id="sublistobj">objects
+                <ul id="sublist">
+                    <a href="./planets.html"><li class="sli">planets</li></a>
+                    <a href="./stars.html"><li class="sli">stars</li></a>
+                    <a href="./blackholes.html"><li class="sli">blackholes</li></a>
+                    <a href="./astroids.html"><li class="sli">astroids</li></a> 
+                    <a href="./satellite.html"><li class="sli">satellite</li></a>         
+              </ul>
+            </li>
+            <a href="./contact.html"><li class="mli">contact</li></a>
+            <a href="../index.html"><li class="mli">logout</li></a>
+            
+        </ul>
+    </div>
+    <div id="gallaryimages">
+        <img class="a" onclick="openimg(0,'Earth observation satellite ','An Earth observation satellite or Earth remote sensing satellite is a satellite used or designed for Earth observation (EO) from orbit, including spy satellites and similar ones intended for non-military uses such as environmental monitoring, meteorology, cartography and others.')">
+        <img class="a" onclick="openimg(1,'Space Junk', 'Space companies, from Elon Musk’s SpaceX to start-up OneWeb, are racing to launch satellites into space with the aim of creating global internet coverage on Earth. But there’s one big problem, experts say — the creation and threat from so-called “space junk.')">
+        <img class="a" onclick="openimg(2,'NASA GOLD Mission','On Jan. 25, 2018, NASA launches Global-scale Observations of the Limb and Disk, or GOLD, a hosted payload aboard SES-14, a commercial communications satellite. GOLD will investigate the dynamic intermingling of space and Earth’s uppermost atmosphere — and is the first NASA science mission to fly an instrument as a commercially hosted payload.')">
+        <img class="a" onclick="openimg(3,'Earth science mission','Human space exploration has shown us that we live on a beautiful swirl of green and blue and white — even when life on Earth is riddled with sorrows, sickness and challenges knotted beyond measure.')">
+        <img class="a" onclick="openimg(4,'International Space Station','The International Space Station (ISS) is a multi-nation construction project that is the largest single structure humans ever put into space. Its main construction was completed between 1998 and 2011, although the station continually evolves to include new missions and experiments. It has been continuously occupied since Nov. 2, 2000')">
+        <img class="a" onclick="openimg(5,'SpaceWatchGL Space Station','Orbital Reef is a commercially developed space station to be built in low Earth orbit. It’s owned and operated by Blue Origin and Sierra Space. Credit: Blue Origin')">
+       
+    </div>
+    <div id="subwindow" style="display: none;">
+        <h1 id="close" onclick="closeimg()">X</h1>
+        <img id="subimage" src="../astro/asset/images/satellites/0.jpg">
+        <h1 id="imageheading">Heading</h1>
+        <p id="imgpara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum.</p>
+    </div>
+</body>
+</html>
+

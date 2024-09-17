@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astroids</title>
+    <script src="../js/astroids.js" defer></script>
+    <link rel="stylesheet" href="../css/astroids.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Astroids</h1>
+            <input class="b" id="left" type="button" value="<" onclick="dec()">
+            <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./Homepage.html"><li class="mli">home</li></a>
+            <a href="./info.html" target="_blank"><li class="mli">about</li></a>
+            <li class="mli" id="sublistobj">objects
+                <ul id="sublist">
+                    <a href="./planets.html"><li class="sli">planets</li></a>
+                    <a href="./stars.html"><li class="sli">stars</li></a>
+                    <a href="./blackholes.html"><li class="sli">blackholes</li></a>
+                    <a href="./astroids.html"><li class="sli">astroids</li></a> 
+                    <a href="./satellite.html"><li class="sli">satellite</li></a>         
+              </ul>
+            </li>
+            <a href="./contact.html"><li class="mli">contact</li></a>
+            <a href="../index.html"><li class="mli">logout</li></a>
+            
+        </ul>
+    </div>
+    <div id="gallaryimages">
+        <img class="a" onclick="openimg(0,'Shondrite','The C-type (chondrite) asteroids are most common. They probably consist of clay and silicate rocks, and are dark in appearance. They are among the most ancient objects in the solar system')">
+        <img class="a" onclick="openimg(1,'Stony', 'The S-types (stony) are made up of silicate materials and nickel-iron')">
+        <img class="a" onclick="openimg(2,'Nickel-iron','The M-types are metallic (nickel-iron). The asteroids compositional differences are related to how far from the Sun they formed. Some experienced high temperatures after they formed and partly melted, with iron sinking to the center and forcing basaltic (volcanic) lava to the surface')">
+        
+    </div>
+    <div id="subwindow" style="display: none;">
+        <h1 id="close" onclick="closeimg()">X</h1>
+        <img id="subimage" src="../astro/asset/images/asteroids/0.jpg">
+        <h1 id="imageheading">Heading</h1>
+        <p id="imgpara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum.</p>
+    </div>
+</body>
+</html>
+

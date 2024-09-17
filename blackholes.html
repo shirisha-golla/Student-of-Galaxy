@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blackholes</title>
+    <script src="../js/blackholes.js" defer></script>
+    <link rel="stylesheet" href="../css/blackholes.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Blackholes</h1>
+            <input class="b" id="left" type="button" value="<" onclick="dec()">
+            <input class="b" id="right" type="button" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="./Homepage.html"><li class="mli">home</li></a>
+            <a href="./info.html" target="_blank"><li class="mli">about</li></a>
+            <li class="mli" id="sublistobj">objects
+                <ul id="sublist">
+                    <a href="./planets.html"><li class="sli">planets</li></a>
+                    <a href="./stars.html"><li class="sli">stars</li></a>
+                    <a href="./blackholes.html"><li class="sli">blackholes</li></a>
+                    <a href="./astroids.html"><li class="sli">astroids</li></a> 
+                    <a href="./satellite.html"><li class="sli">satellite</li></a>         
+              </ul>
+            </li>
+            <a href="./contact.html"><li class="mli">contact</li></a>
+            <a href="../index.html"><li class="mli">logout</li></a>
+            
+        </ul>
+    </div>
+    <div id="gallaryimages">
+        <img class="a" onclick="openimg(0,'Supermassive black hole','The first direct image of a supermassive black hole, located at the galactic core of Messier 87. It shows radio-wave emission from a heated accretion ring orbiting the object at a mean separation of 350 AU, or ten times larger than the orbit of Neptune around the Sun.')">
+        <img class="a" onclick="openimg(1,'Stellar black hole', 'A stellar black hole (or stellar-mass black hole) is a black hole formed by the gravitational collapse of a star. They have masses ranging from about 5 to several tens of solar masses. The process is observed as a hypernova explosion or as a gamma ray burst.These black holes are also referred to as collapsars')">
+        <img class="a" onclick="openimg(2,'Intermediate-mass black hole','An intermediate-mass black hole (IMBH) is a class of black hole with mass in the range 10<sup>2</sup>–10<sup>5</sup> solar masses: significantly more than stellar black holes but less than the 10<sup>5</sup>–10<sup>9</sup> solar mass supermassive black holes')">
+        <img class="a" onclick="openimg(3,'Micro black hole','Micro black holes, also called mini black holes or quantum mechanical black holes, are hypothetical tiny (<1 M☉) black holes, for which quantum mechanical effects play an important role. The concept that black holes may exist that are smaller than stellar mass was introduced in 1971 by Stephen Hawking.')">
+      
+    </div>
+    <div id="subwindow" style="display: none;">
+        <h1 id="close" onclick="closeimg()">X</h1>
+        <img id="subimage" src="../astro/asset/images/blackholes/0.jpg">
+        <h1 id="imageheading">Heading</h1>
+        <p id="imgpara"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nostrum.</p>
+    </div>
+</body>
+</html>
